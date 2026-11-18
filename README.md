@@ -1,16 +1,147 @@
-# React + Vite
+# Student Management System – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A React-based Student Management System frontend built with **React, Vite, and JavaScript**, deployed on **AWS EC2** using Nginx.
 
-Currently, two official plugins are available:
+This project demonstrates frontend development, production builds, cloud deployment, and integration with a backend REST API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- Responsive React-based user interface.
+- Student data management through backend API integration.
+- File upload interface.
+- REST API communication with the backend.
+- Production build using Vite.
+- Deployment on AWS EC2.
+- Nginx configuration for serving the frontend.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the Oxlint configuration
+| Technology | Purpose |
+|---|---|
+| React.js | Frontend development |
+| Vite | Build tool |
+| JavaScript | Application logic |
+| CSS | Styling |
+| Nginx | Web server |
+| AWS EC2 | Cloud deployment |
+| Git & GitHub | Version control |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🏗️ Architecture
+
+```text
+              User / Browser
+                    |
+                    v
+              AWS EC2 Instance
+                    |
+                    v
+                  Nginx
+                    |
+                    v
+             React Frontend
+                    |
+                    | HTTP Requests
+                    v
+              Backend REST API
+```
+
+## 📂 Project Structure
+
+```text
+student-frontend/
+│
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+*The structure may vary depending on the final implementation.*
+
+## ⚙️ Local Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Student-aditya123/student-frontend.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd student-frontend
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure environment variables
+
+Create a `.env` file if required by your application.
+
+```env
+VITE_API_URL=YOUR_BACKEND_API_URL
+```
+
+### 5. Start development server
+
+```bash
+npm run dev
+```
+
+### 6. Create production build
+
+```bash
+npm run build
+```
+
+The production-ready files will be generated inside the `dist/` directory.
+
+## ☁️ AWS Deployment
+
+The frontend is deployed on an AWS EC2 instance.
+
+Deployment workflow:
+
+1. Launch an EC2 instance.
+2. Install Node.js and Nginx.
+3. Clone the frontend repository.
+4. Install project dependencies.
+5. Generate the production build.
+6. Configure Nginx to serve the generated `dist/` directory.
+7. Configure the required network access through the EC2 Security Group.
+
+## 🔗 Related Repository
+
+**Backend:** [student-backend](https://github.com/Student-aditya123/student-management-backend.git)
+
+## 🎯 Learning Outcomes
+
+- React application development.
+- Production builds using Vite.
+- AWS EC2 deployment.
+- Nginx web server configuration.
+- Frontend and backend integration.
+- Basic cloud infrastructure management.
+
+## 👨‍💻 Author
+
+**Aditya Singh**
+
+B.Tech Computer Science & Engineering
+
+[GitHub](https://github.com/Student-aditya123) | [LinkedIn](YOUR_LINKEDIN_URL)
+
+---
+
+⭐ If you find this project useful, consider giving it a star!
