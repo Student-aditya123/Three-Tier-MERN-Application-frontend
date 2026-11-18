@@ -1,0 +1,206 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+h1 {
+  color: #2563eb;
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  color: #1e40af;
+  font-size: 24px;
+}
+
+h3 {
+  margin-top: 25px;
+}
+
+.architecture {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 14px;
+}
+
+.section {
+  margin-top: 30px;
+  padding: 25px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.student-form,
+.upload-form {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+button {
+  padding: 11px 16px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.secondary-button {
+  background: #64748b;
+}
+
+.danger-button {
+  background: #dc2626;
+}
+
+.student,
+.file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 15px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.student-info,
+.file-info {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.student-info p,
+.file-info p {
+  color: #64748b;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.student-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.file-section {
+  background: #fafcff;
+}
+
+.section-description,
+.hint {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.file-label {
+  font-weight: bold;
+}
+
+.selected-file {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  background: #eff6ff;
+  border-radius: 7px;
+  overflow-wrap: anywhere;
+}
+
+.files-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.files-header h3 {
+  margin: 0;
+}
+
+.error {
+  color: #dc2626;
+  margin: 12px 0;
+}
+
+.success {
+  color: #15803d;
+  margin: 12px 0;
+}
+
+footer {
+  margin-top: 35px;
+  text-align: center;
+  color: #64748b;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 10px;
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+  .student,
+  .file-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .student-actions {
+    width: 100%;
+  }
+}
