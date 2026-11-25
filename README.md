@@ -1,4 +1,4 @@
-# Student Management System – Frontend
+# THREE-TIER MERN APPLICATION – Frontend
 
 A React-based Student Management System frontend built with **React, Vite, and JavaScript**, deployed on **AWS EC2** using Nginx.
 
