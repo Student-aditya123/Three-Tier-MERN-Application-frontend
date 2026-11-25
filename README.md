@@ -4,6 +4,8 @@ A React-based Student Management System frontend built with **React, Vite, and J
 
 This project demonstrates frontend development, production builds, cloud deployment, and integration with a backend REST API.
 
+# Backend: [student-backend](https://github.com/Student-aditya123/Three-Tier-MERN-Application-backend.git)
+
 ## 🚀 Features
 
 - Responsive React-based user interface.
@@ -123,7 +125,7 @@ Deployment workflow:
 
 ## 🔗 Related Repository
 
-**Backend:** [student-backend](https://github.com/Student-aditya123/student-management-backend.git)
+**Backend:** [student-backend](https://github.com/Student-aditya123/Three-Tier-MERN-Application-backend.git)
 
 ## 🎯 Learning Outcomes
 
